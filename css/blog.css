@@ -1,0 +1,128 @@
+.header{
+    min-height: 550px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/background.jpg);
+   
+}
+.header .text-box h1{
+   font-size: 40px;
+}
+.row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+.row .left-col{
+    flex-basis: 66%;
+    text-align: left;
+}
+.row .left-col img{
+    width: 100%;
+}
+.row .left-col h2{
+    width: 100%;
+   font-size: 20px;
+   margin: 15px 0;
+}
+.row .right-col{
+    flex-basis: 30%;
+    width: 100%;
+    text-align: left;
+    background: rgb(243 243 243);
+   
+}
+.form{
+    width: 100%;
+    border: 1px solid rgb(189, 187, 187);
+    padding: 15px;
+    margin: 30px 0;
+}
+.form h3{
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.form form {
+    width: 100%;
+}
+.form form input{
+    width: 100%;
+    padding: 10px 5px;
+    background: rgb(243 243 243);
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+.form form textarea{
+    width: 100%;
+    resize: none;
+    background: rgb(243 243 243);
+    border: 0;
+    outline: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.row .right-col .title-header{
+    width: 100%;
+    background: #f44336;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+.row .right-col .title-header h2{
+    font-size: 18px;
+}
+.right-col ul{
+    padding: 0 5px;
+    position: relative;
+    color: #777;
+}
+.right-col ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+.right-col ul li span{
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #f44336;
+    border: 1px solid #f44336;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 20px 15px;
+    position: relative;
+}
+.btn::after,
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #f44336;
+    top: 17.5px;
+    transition: 1.5s;
+}
+.btn::after{
+    right: -15px;
+}
+.btn::before{
+    left: -15px;
+}
+.btn:hover{
+    border:  1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+    transition: 1s;
+}
